@@ -1195,7 +1195,7 @@
             this.RHFKeyLabel.Name = "RHFKeyLabel";
             this.RHFKeyLabel.Size = new System.Drawing.Size(357, 13);
             this.RHFKeyLabel.TabIndex = 3;
-            this.RHFKeyLabel.Text = "Rhythm Heaven Fever [USA] Title Key - (Find it on \"that one title key site\")";
+            this.RHFKeyLabel.Text = "みんなのリズム天国 [JPN] Title Key - (Find it on \"that one title key site\")";
             // 
             // CommonLabel
             // 

@@ -569,7 +569,7 @@ namespace TeconMoon_s_WiiVC_Injector
                 tmpSource = ASCIIEncoding.ASCII.GetBytes(sSourceData);
                 tmpHash = new MD5CryptoServiceProvider().ComputeHash(tmpSource);
                 TitleKeyHash = BitConverter.ToString(tmpHash);
-                if (TitleKeyHash == "F9-4B-D8-8E-BB-7A-A9-38-67-E6-30-61-5F-27-1C-9F")
+                if (TitleKeyHash == "D7-B8-73-CE-78-AC-73-0F-E8-B8-A9-8A-0E-9E-B1-3A")
                 {
                     TitleKeyGood = true;
                     TitleKey.ReadOnly = true;
@@ -1556,7 +1556,7 @@ namespace TeconMoon_s_WiiVC_Injector
             tmpSource = ASCIIEncoding.ASCII.GetBytes(sSourceData);
             tmpHash = new MD5CryptoServiceProvider().ComputeHash(tmpSource);
             TitleKeyHash = BitConverter.ToString(tmpHash);
-            if (TitleKeyHash == "F9-4B-D8-8E-BB-7A-A9-38-67-E6-30-61-5F-27-1C-9F")
+            if (TitleKeyHash == "D7-B8-73-CE-78-AC-73-0F-E8-B8-A9-8A-0E-9E-B1-3A")
             {
                 Registry.CurrentUser.CreateSubKey("WiiVCInjector").SetValue("TitleKey", TitleKey.Text);
                 Registry.CurrentUser.CreateSubKey("WiiVCInjector").Close();
@@ -1730,17 +1730,17 @@ namespace TeconMoon_s_WiiVC_Injector
                 JNUSToolDownloads + "0005001010004001\\code\\c2w.img",
                 JNUSToolDownloads + "0005001010004001\\code\\boot.bin",
                 JNUSToolDownloads + "0005001010004001\\code\\dmcu.d.hex",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\cos.xml",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\frisbiiU.rpx",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\fw.img",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\fw.tmd",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\htk.bin",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\code\\nn_hai_user.rpl",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\content\\assets\\shaders\\cafe\\banner.gsh",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\content\\assets\\shaders\\cafe\\fade.gsh",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\meta\\bootMovie.h264",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\meta\\bootLogoTex.tga",
-                JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]\\meta\\bootSound.btsnd"
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\cos.xml",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\frisbiiU.rpx",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\fw.img",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\fw.tmd",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\htk.bin",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\code\\nn_hai_user.rpl",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\content\\assets\\shaders\\cafe\\banner.gsh",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\content\\assets\\shaders\\cafe\\fade.gsh",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\meta\\bootMovie.h264",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\meta\\bootLogoTex.tga",
+                JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]\\meta\\bootSound.btsnd"
             };
 
             var fileHashes = new string[]
@@ -1754,13 +1754,13 @@ namespace TeconMoon_s_WiiVC_Injector
                 "69E191E8B0DF1D5304B36F1375C4F127",
                 "3CAF52A9A440EEE4F125A3AD22E305C8",
                 "AE4E06CAD3BEF60AE5C49E22CCDC3254",
-                "C99CAF5995E395F39C3FCAB4A8AF20E0",
+                "7931451FE0C5F82B1CCC34569AF249FA",
                 "C4BF586BA0071BD8477986C1AA37E1F1",
                 "5F2FA196DFC158F0FCC69272073AE07E",
                 "307221985A7B46F0386A2637DC15DA3E",
                 "CA0DAC3E3C5654209C754357EF5A2507",
                 "67B312145ECB70514D5BD36FCAAE0193",
-                "43CD445B8569A445F97ECCC098C93B38"
+                "43CD445B8569A445F97ECCC098C93B38",
             };
 
             var filesToDownload = new string[]
@@ -1770,17 +1770,17 @@ namespace TeconMoon_s_WiiVC_Injector
                 "0005001010004001 -file /code/c2w.img",
                 "0005001010004001 -file /code/boot.bin",
                 "0005001010004001 -file /code/dmcu.d.hex",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/cos.xml",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/frisbiiU.rpx",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/fw.img",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/fw.tmd",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/htk.bin",
-                "00050000101b0700 " + TitleKey.Text + " -file /code/nn_hai_user.rpl",
-                "00050000101b0700 " + TitleKey.Text + " -file /content/assets/shaders/cafe/banner.gsh",
-                "00050000101b0700 " + TitleKey.Text + " -file /content/assets/shaders/cafe/fade.gsh*",
-                "00050000101b0700 " + TitleKey.Text + " -file /meta/bootMovie.h264",
-                "00050000101b0700 " + TitleKey.Text + " -file /meta/bootLogoTex.tga",
-                "00050000101b0700 " + TitleKey.Text + " -file /meta/bootSound.btsnd"
+                "00050000101b0600 " + TitleKey.Text + " -file /code/cos.xml",
+                "00050000101b0600 " + TitleKey.Text + " -file /code/frisbiiU.rpx",
+                "00050000101b0600 " + TitleKey.Text + " -file /code/fw.img",
+                "00050000101b0600 " + TitleKey.Text + " -file /code/fw.tmd",
+                "00050000101b0600 " + TitleKey.Text + " -file /code/htk.bin",
+                "00050000101b0600 " + TitleKey.Text + " -file /code/nn_hai_user.rpl",
+                "00050000101b0600 " + TitleKey.Text + " -file /content/assets/shaders/cafe/banner.gsh",
+                "00050000101b0600 " + TitleKey.Text + " -file /content/assets/shaders/cafe/fade.gsh*",
+                "00050000101b0600 " + TitleKey.Text + " -file /meta/bootMovie.h264",
+                "00050000101b0600 " + TitleKey.Text + " -file /meta/bootLogoTex.tga",
+                "00050000101b0600 " + TitleKey.Text + " -file /meta/bootSound.btsnd"
             };
 
             BuildStatus.Text = "Checking if the necessary files are present...";
@@ -1837,10 +1837,10 @@ namespace TeconMoon_s_WiiVC_Injector
                 BuildStatus.Text = "Saving files from Nintendo for future use...";
                 BuildStatus.Refresh();
 
-                if (Directory.Exists("Rhythm Heaven Fever [VAKE01]"))
+                if (Directory.Exists("みんなのリズム天国 [VAKJ01]"))
                 {
-                    FileSystem.CopyDirectory("Rhythm Heaven Fever [VAKE01]", JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]", true);
-                    Directory.Delete("Rhythm Heaven Fever [VAKE01]", true);
+                    FileSystem.CopyDirectory("みんなのリズム天国 [VAKJ01]", JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]", true);
+                    Directory.Delete("みんなのリズム天国 [VAKJ01]", true);
                 }
                 if (Directory.Exists("0005001010004000"))
                 {
@@ -1886,7 +1886,7 @@ namespace TeconMoon_s_WiiVC_Injector
             //Copy downloaded files to the build directory
             BuildStatus.Text = "Copying base files to temporary build directory...";
             BuildStatus.Refresh();
-            FileSystem.CopyDirectory(JNUSToolDownloads + "Rhythm Heaven Fever [VAKE01]", TempBuildPath);
+            FileSystem.CopyDirectory(JNUSToolDownloads + "みんなのリズム天国 [VAKJ01]", TempBuildPath);
             if (C2WPatchFlag.Checked)
             {
                 FileSystem.CopyDirectory(JNUSToolDownloads + "0005001010004000", TempBuildPath);
